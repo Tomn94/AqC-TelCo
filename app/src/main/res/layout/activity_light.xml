@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ioreef.aqctelco.LightActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rayList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:paddingTop="15dip"
+        android:paddingBottom="30dip"
+        android:clipToPadding="false" />
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/floatingLightSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_save"
+        fab:fab_colorNormal="@color/colorPrimary"
+        fab:fab_colorPressed="@color/colorPrimaryDark"
+        fab:fab_colorRipple="@color/colorPrimaryDark" />
+
+    <View
+        android:id="@+id/floatingLightSaveLoading"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/loading_circle"
+        android:visibility="invisible"/>
+
+    <ProgressBar
+        android:id="@+id/floatingLightSaveLoadingProgress"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_alignBottom="@+id/floatingLightSaveLoading"
+        android:layout_alignEnd="@+id/floatingLightSaveLoading"
+        android:layout_alignLeft="@+id/floatingLightSaveLoading"
+        android:layout_alignRight="@+id/floatingLightSaveLoading"
+        android:layout_alignStart="@+id/floatingLightSaveLoading"
+        android:layout_alignTop="@+id/floatingLightSaveLoading"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10dp"
+        android:indeterminate="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

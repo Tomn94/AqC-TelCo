@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AqC TelCo</string>
+    <string name="connectionContent">IP</string>
+    <string name="connectionHint">Enter IP address</string>
+    <string name="connectionQuit">QUIT</string>
+    <string name="connectionTitle">Connect to AqC Supervision</string>
+    <string name="connectionValidate">VALIDATE</string>
+    <string name="noData">No data</string>
+    <string name="sensor">Sensor</string>
+    <string name="tabNetwork">Network</string>
+    <string name="tabRelay">Relays</string>
+    <string name="tabSummary">Summary</string>
+    <string name="value">Value</string>
+    <string name="btnLightEditCancel">Cancel</string>
+    <string name="btnLightEditOK">Validate</string>
+    <string name="btnRelayNameCancel">Cancel</string>
+    <string name="btnRelayNameOK">Validate</string>
+    <string name="checkActivationLight">Activated</string>
+    <string name="checkInvert">Inverted</string>
+    <string name="editNameInputEmpty">Enter a name for the relay %1$s</string>
+    <string name="editNameTitle">Edit the name of the relay %1$s</string>
+    <string name="timeoutContent">Unable to reach Supervision</string>
+    <string name="timeoutQuit">QUIT</string>
+    <string name="timeoutTitle">Failed to connect</string>
+    <string name="timeoutValidate">RETRY</string>
+    <string name="labelCurveName">Curve %1$d</string>
+    <string name="lightActivityTitle">Edit lighting</string>
+    <string name="btnMainCredits">Credits</string>
+    <string name="creditsProjectName">AqC</string>
+    <string name="creditsTitle">Credits</string>
+    <string name="errorContent">Impossible de se connecter à Supervision.</string>
+    <string name="errorQuit">QUIT</string>
+    <string name="errorTitle">An error has occured</string>
+    <string name="errorValidate">CONNECT</string>
+    <string name="lightAlertSaveCancel">Cancel</string>
+    <string name="lightAlertSaveConfirm">Save</string>
+    <string name="lightAlertSaveDetail">Information of one or several LED have been edited, but not saved.\nClosing without saving will cancel the modifications.</string>
+    <string name="lightAlertSaveErase">Close Without Saving</string>
+    <string name="lightAlertSaveTitle">Do you wish to save before going back?</string>
+    <string name="lightDetail">Curve %1$d · %2$s</string>
+    <string name="lightEditTitle">Edit LED %1$d</string>
+    <string name="lightInverted">Inverted</string>
+    <string name="lightNamePrefix">LED %1$d</string>
+    <string name="menuSimulation">Simulate saved lighting parameters</string>
+    <string name="lightNotInverted">Normal</string>
+    <string name="noChartData">No data to display</string>
+    <string name="pleaseWait">Please wait...</string>
+    <string name="simulationCancel">Cancel</string>
+    <string name="summaryBtnLightEdit">EDIT</string>
+    <string name="summaryLightTitle">Lighting mode</string>
+    <string name="textViewCurves">Curve:</string>
+    <string name="titleSimulation">Simulation of saved lighting parameters in progress</string>
+    <string name="wrongResponseRay">Can\'t save lighting parameters to Supervision.</string>
+    <string name="wrongResponseSwitcher">Can\'t edit the switcher on Supervision.</string>
+    <string-array name="sensorLevelNames">
+        <item>Low</item>
+        <item>Average</item>
+        <item>High</item>
+        <item>Maximum</item>
+    </string-array>
+    <string-array name="sensorLeakValues">
+        <item>✓</item>
+        <item>LEAK</item>
+    </string-array>
+</resources>

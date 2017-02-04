@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">AqC TelCo</string>
+    <string name="tabSummary">Bilan</string>
+    <string name="tabRelay">Relais</string>
+    <string name="tabNetwork">Réseau</string>
+    <string name="noData">Aucune donnée</string>
+    <string name="sensor">Capteur</string>
+    <string name="pleaseWait">Veuillez patienter…</string>
+
+    <!-- Dialogs -->
+    <string name="connectionTitle">Connexion à AqC Supervision</string>
+    <string name="connectionHint">Saisir l\'adresse IP</string>
+    <string name="connectionContent">IP</string>
+    <string name="connectionValidate">VALIDER</string>
+    <string name="connectionQuit">QUITTER</string>
+
+    <string name="timeoutTitle">Erreur de connexion</string>
+    <string name="timeoutValidate">RÉESSAYER</string>
+    <string name="timeoutQuit">QUITTER</string>
+    <string name="timeoutContent">Impossible de joindre Supervision</string>
+
+    <string name="errorTitle">Une erreur est survenue</string>
+    <string name="errorValidate">SE CONNECTER</string>
+    <string name="errorQuit">QUITTER</string>
+    <string name="errorContent">Impossible de se connecter à Supervision.</string>
+
+    <string name="wrongResponseSwitcher">Impossible de modifier le relais sur Supervision.</string>
+    <string name="wrongResponseRay">Impossible d\'enregistrer la configuration d\'éclairage sur Supervision.</string>
+    <string name="dialogOK" translatable="false">OK</string>
+
+    <!-- Bilan -->
+    <string name="noChartData">Aucune donnée à afficher</string>
+    <string name="summaryLightTitle">Consigne éclairage</string>
+    <string name="summaryBtnLightEdit">MODIFIER</string>
+    <string name="summaryUnknownValue" translatable="false">\?</string>
+    <string name="sensorSuffixTemperature" translatable="false">%1$.1f°C</string>
+    <string name="sensorSuffixEnergy" translatable="false">%1$.1f kW/h</string>
+    <plurals name="sensorSuffixBubbles">
+        <item quantity="zero">%1$.1f bulle/s</item>
+        <item quantity="one">%1$.1f bulle/s</item>
+        <item quantity="other">%1$.1f bulles/s</item>
+    </plurals>
+    <string name="sensorSuffixQuantum" translatable="false">%1$.1f µE</string>
+    <string-array name="sensorLevelNames">
+        <item>Bas</item>
+        <item>Moyen</item>
+        <item>Haut</item>
+        <item>Maximum</item>
+    </string-array>
+    <string-array name="sensorLeakValues">
+        <item>RÀS</item>
+        <item>FUITE</item>
+    </string-array>
+    <string name="creditsTitle">Crédits</string>
+    <string name="creditsProjectName">L\'Aquarium Connecté AqC</string>
+    <!--TODO: Mentions de copyrights? + Traduction en anglais-->
+    <string name="creditsText" translatable="false">AqC TelCo est l\'application officielle du Projet AqC.
+        Elle permet de contrôler AqC Supervision tout en surveillant les états des différents
+        organes de votre aquarium récifal.
+        \n\n Ce projet est réalisé dans le cadre du Projet Système Embarqué (ProSE).\n\n<b>Equipe B3 :</b>\n
+        Guillaume BERLAND (Chef de Projet)\n
+        Antoine BRETECHER (Responsable Test)\n
+        Clément PABST (Responsable Qualité)\n
+        Thomas NAUDET &amp; Rémy SALIM (AqC TelCo)\n
+        Timothé BATTEUR &amp; Arnaud BUCHS &amp; Guillaume MARTIN (AqC Supervision)
+        \n\nLogiciel sous Licence BSD 3-Clause\nhttps://opensource.org/licenses/BSD-3-Clause\n\nVersion 1.0.1181 - Mai 2016
+    </string>
+    <string name="btnMainCredits">Crédits</string>
+
+    <!-- Relais -->
+    <string name="editNameTitle">Modifier le nom du relai « %1$s »</string>
+    <string name="editNameInputEmpty">Entrer un nom pour le relais %1$s</string>
+    <string name="btnRelayNameOK">Valider</string>
+    <string name="btnRelayNameCancel">Annuler</string>
+
+    <!-- Light -->
+    <string name="lightActivityTitle">Modifier l\'éclairage</string>
+    <string name="lightNamePrefix">LED %1$d</string>
+    <string name="lightDetail">Courbe %1$d · %2$s</string>
+    <string name="lightInverted">Inversée </string>
+    <string name="lightNotInverted">Normale</string>
+
+    <string name="menuSimulation">Simuler l\'éclairage sauvegardé</string>
+    <string name="titleSimulation">Simulation de l\'éclairage sauvegardé en cours</string>
+    <string name="simulationCancel">Annuler</string>
+
+    <string name="lightEditTitle">Modifier la LED %1$d</string>
+    <string name="checkActivationLight">Activée</string>
+    <string name="checkInvert">Inversée</string>
+    <string name="textViewCurves">Courbe :</string>
+    <string name="labelCurveName">Courbe %1$d</string>
+    <string name="btnLightEditOK">Valider</string>
+    <string name="btnLightEditCancel">Annuler</string>
+
+    <string name="lightAlertSaveTitle">Voulez-vous sauvegarder avant de revenir ?</string>
+    <string name="lightAlertSaveDetail">Les informations de une ou plusieurs LED ont été modifiées mais n\'ont pas été sauvegardées.\nFermer sans sauvegarder annulera les modifications.</string>
+    <string name="lightAlertSaveConfirm">Sauvegarder</string>
+    <string name="lightAlertSaveCancel">Annuler</string>
+    <string name="lightAlertSaveErase">Fermer sans sauvegarder</string>
+    <string name="value">Valeur</string>
+</resources>

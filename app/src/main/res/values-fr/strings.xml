@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AqC TelCo</string>
+    <string name="connectionContent">IP</string>
+    <string name="connectionHint">Saisir l\'adresse IP</string>
+    <string name="connectionQuit">QUITTER</string>
+    <string name="connectionTitle">Connexion à AqC Supervision</string>
+    <string name="connectionValidate">VALIDER</string>
+    <string name="noData">Aucune donnée</string>
+    <string name="sensor">Capteur</string>
+    <string name="tabNetwork">Réseau</string>
+    <string name="tabRelay">Relais</string>
+    <string name="tabSummary">Bilan</string>
+    <string name="value">Valeur</string>
+    <string name="btnLightEditCancel">Annuler</string>
+    <string name="btnLightEditOK">Valider</string>
+    <string name="btnRelayNameCancel">Annuler</string>
+    <string name="btnRelayNameOK">Valider</string>
+    <string name="checkActivationLight">Activée</string>
+    <string name="checkInvert">Inversée</string>
+    <string name="editNameInputEmpty">Entrer un nom pour le relais %1$s</string>
+    <string name="editNameTitle">Modifier le nom du relai « %1$s »</string>
+    <string name="timeoutContent">Impossible de joindre Supervision</string>
+    <string name="timeoutQuit">QUITTER</string>
+    <string name="timeoutTitle">Erreur de connexion</string>
+    <string name="timeoutValidate">RÉESSAYER</string>
+    <string name="labelCurveName">Courbe %1$d</string>
+    <string name="btnMainCredits">Crédits</string>
+    <string name="creditsProjectName">L\'Aquarium Connecté AqC</string>
+    <string name="creditsTitle">Crédits</string>
+    <string name="errorContent">Impossible de se connecter à Supervision.</string>
+    <string name="errorQuit">QUITTER</string>
+    <string name="errorTitle">Une erreur est survenue</string>
+    <string name="errorValidate">SE CONNECTER</string>
+    <string name="lightActivityTitle">Modifier l\'éclairage</string>
+    <string name="lightAlertSaveCancel">Annuler</string>
+    <string name="lightAlertSaveConfirm">Sauvegarder</string>
+    <string name="lightAlertSaveDetail">Les informations de une ou plusieurs LED ont été modifiées mais n\'ont pas été sauvegardées.\nFermer sans sauvegarder annulera les modifications.</string>
+    <string name="lightAlertSaveErase">Fermer sans sauvegarder</string>
+    <string name="lightAlertSaveTitle">Voulez-vous sauvegarder avant de revenir ?</string>
+    <string name="lightDetail">Courbe %1$d · %2$s</string>
+    <string name="lightEditTitle">Modifier la LED %1$d</string>
+    <string name="lightInverted">Inversée</string>
+    <string name="lightNamePrefix">LED %1$d</string>
+    <string name="lightNotInverted">Normale</string>
+    <string name="menuSimulation">Simuler l\'éclairage sauvegardé</string>
+    <string name="noChartData">Aucune donnée à afficher</string>
+    <string name="pleaseWait">Veuillez patienter…</string>
+    <string name="summaryLightTitle">Consigne éclairage</string>
+    <string name="textViewCurves">Courbe :</string>
+    <string name="titleSimulation">Simulation de l\'éclairage sauvegardé en cours</string>
+    <string name="summaryBtnLightEdit">MODIFIER</string>
+    <string name="simulationCancel">Annuler</string>
+    <string name="wrongResponseRay">Impossible d\'enregistrer la configuration d\'éclairage sur Supervision.</string>
+    <string name="wrongResponseSwitcher">Impossible de modifier le relais sur Supervision.</string>
+    <string-array name="sensorLevelNames">
+        <item>Bas</item>
+        <item>Moyen</item>
+        <item>Haut</item>
+        <item>Maximum</item>
+    </string-array>
+    <string-array name="sensorLeakValues">
+        <item>✓</item>
+        <item>FUITE</item>
+    </string-array>
+</resources>

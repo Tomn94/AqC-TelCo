@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.3" jmeter="2.8.20130705">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Plan de test" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="Variables pré-définies" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Variables pré-définies" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="DEMANDER_LISTE_CAPTEURS" elementType="Argument">
+            <stringProp name="Argument.name">DEMANDER_LISTE_CAPTEURS</stringProp>
+            <stringProp name="Argument.value">{&quot;action&quot;: 10}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DEMANDER_LISTE_RELAIS" elementType="Argument">
+            <stringProp name="Argument.name">DEMANDER_LISTE_RELAIS</stringProp>
+            <stringProp name="Argument.value">{&quot;action&quot;: 20}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DEMANDER_LISTE_LEDS" elementType="Argument">
+            <stringProp name="Argument.name">DEMANDER_LISTE_LEDS</stringProp>
+            <stringProp name="Argument.value">{&quot;action&quot;: 30}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DEMANDER_LISTE_COURBES" elementType="Argument">
+            <stringProp name="Argument.name">DEMANDER_LISTE_COURBES</stringProp>
+            <stringProp name="Argument.value">{&quot;action&quot;: 35}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DEMANDER_LISTE_NOTIF" elementType="Argument">
+            <stringProp name="Argument.name">DEMANDER_LISTE_NOTIF</stringProp>
+            <stringProp name="Argument.value">{&quot;action&quot;: 40}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ENVOIE_RELAY_MODIFIE" elementType="Argument">
+            <stringProp name="Argument.name">ENVOIE_RELAY_MODIFIE</stringProp>
+            <stringProp name="Argument.value">{  &quot;action&quot;: 21,  &quot;data&quot;: {    &quot;id&quot;: 100,    &quot;addr&quot;: 64,    &quot;pin&quot;: 0,    &quot;pool&quot;: 0,    &quot;state&quot;: false,    &quot;name&quot;: &quot;Brasseurs surface&quot;  }}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ENVOIE_LEDS_MODIFIEES" elementType="Argument">
+            <stringProp name="Argument.name">ENVOIE_LEDS_MODIFIEES</stringProp>
+            <stringProp name="Argument.value">{  &quot;action&quot;: 31,  &quot;data&quot;: [    {      &quot;idRay&quot;: 200,      &quot;addr&quot;: 44,      &quot;pin&quot;: 0,      &quot;state&quot;: true,      &quot;inverted&quot;: false,      &quot;idCurve&quot;: 301    },    {      &quot;idRay&quot;: 202,      &quot;addr&quot;: 44,      &quot;pin&quot;: 1,      &quot;state&quot;: false,      &quot;inverted&quot;: false,      &quot;idCurve&quot;: 301    }  ]}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="LANCER_SIMULATION" elementType="Argument">
+            <stringProp name="Argument.name">LANCER_SIMULATION</stringProp>
+            <stringProp name="Argument.value">{&quot;action&quot;: 38,&quot;data&quot;: 2}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ARRETER SIMULATION" elementType="Argument">
+            <stringProp name="Argument.name">ARRETER SIMULATION</stringProp>
+            <stringProp name="Argument.value">{&quot;action&quot;: 39}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="MODIFIER_INFO_NOTIF" elementType="Argument">
+            <stringProp name="Argument.name">MODIFIER_INFO_NOTIF</stringProp>
+            <stringProp name="Argument.value">{&quot;action&quot;: 41,&quot;data&quot;:{&quot;id&quot;: 404,&quot;name&quot;: &quot;Écart important de température entre le bassin et la décante&quot;, &quot;state&quot;: 0, &quot;color&quot;: 2, &quot;led&quot;: false, &quot;push&quot;: true, &quot;mail&quot;: true } }</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Groupe d&apos;unités" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Contrôleur Boucle" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1462527364000</longProp>
+        <longProp name="ThreadGroup.end_time">1462527364000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Contrôleur Simple" enabled="true"/>
+        <hashTree>
+          <ConfigTestElement guiclass="TCPConfigGui" testclass="ConfigTestElement" testname="Paramètres TCP par défaut" enabled="true">
+            <stringProp name="TCPSampler.server">192.168.1.49</stringProp>
+            <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+            <stringProp name="TCPSampler.port">12345</stringProp>
+            <boolProp name="TCPSampler.nodelay">false</boolProp>
+            <stringProp name="TCPSampler.timeout"></stringProp>
+            <stringProp name="TCPSampler.request"></stringProp>
+            <stringProp name="TCPSampler.classname">com.ioreef.aqctelco.jmeter.TCPClientAqCImpl</stringProp>
+          </ConfigTestElement>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Compteur de temps fixe" enabled="true">
+            <stringProp name="ConstantTimer.delay">500</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="Arbre de résultats" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>true</xml>
+                <fieldNames>false</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+          <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="Requête TCP - Demander la liste des capteurs" enabled="true">
+            <stringProp name="TCPSampler.server"></stringProp>
+            <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+            <stringProp name="TCPSampler.port"></stringProp>
+            <boolProp name="TCPSampler.nodelay">false</boolProp>
+            <stringProp name="TCPSampler.timeout">500</stringProp>
+            <stringProp name="TCPSampler.request">${DEMANDER_LISTE_CAPTEURS}</stringProp>
+            <stringProp name="ConfigTestElement.username"></stringProp>
+            <stringProp name="ConfigTestElement.password"></stringProp>
+          </TCPSampler>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assertion Réponse" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1567">10</stringProp>
+                <stringProp name="0"></stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="Requête TCP - Demander la liste des relais" enabled="true">
+            <stringProp name="TCPSampler.server"></stringProp>
+            <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+            <stringProp name="TCPSampler.port"></stringProp>
+            <boolProp name="TCPSampler.nodelay">false</boolProp>
+            <stringProp name="TCPSampler.timeout">500</stringProp>
+            <stringProp name="TCPSampler.request">${DEMANDER_LISTE_RELAIS}</stringProp>
+            <stringProp name="ConfigTestElement.username"></stringProp>
+            <stringProp name="ConfigTestElement.password"></stringProp>
+          </TCPSampler>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assertion Réponse" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1598">20</stringProp>
+                <stringProp name="0"></stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="Requête TCP - Demander la liste des LEDs" enabled="true">
+            <stringProp name="TCPSampler.server"></stringProp>
+            <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+            <stringProp name="TCPSampler.port"></stringProp>
+            <boolProp name="TCPSampler.nodelay">false</boolProp>
+            <stringProp name="TCPSampler.timeout">500</stringProp>
+            <stringProp name="TCPSampler.request">${DEMANDER_LISTE_LEDS}</stringProp>
+            <stringProp name="ConfigTestElement.username"></stringProp>
+            <stringProp name="ConfigTestElement.password"></stringProp>
+          </TCPSampler>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assertion Réponse" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1629">30</stringProp>
+                <stringProp name="0"></stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="Requête TCP - Demander la liste des courbes" enabled="true">
+            <stringProp name="TCPSampler.server"></stringProp>
+            <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+            <stringProp name="TCPSampler.port"></stringProp>
+            <boolProp name="TCPSampler.nodelay">false</boolProp>
+            <stringProp name="TCPSampler.timeout">500</stringProp>
+            <stringProp name="TCPSampler.request">${DEMANDER_LISTE_COURBES}</stringProp>
+            <stringProp name="ConfigTestElement.username"></stringProp>
+            <stringProp name="ConfigTestElement.password"></stringProp>
+          </TCPSampler>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assertion Réponse" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1634">35</stringProp>
+                <stringProp name="0"></stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="Requête TCP - Demander la liste des notifications" enabled="true">
+            <stringProp name="TCPSampler.server"></stringProp>
+            <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+            <stringProp name="TCPSampler.port"></stringProp>
+            <boolProp name="TCPSampler.nodelay">false</boolProp>
+            <stringProp name="TCPSampler.timeout">500</stringProp>
+            <stringProp name="TCPSampler.request">${DEMANDER_LISTE_NOTIF}</stringProp>
+            <stringProp name="ConfigTestElement.username"></stringProp>
+            <stringProp name="ConfigTestElement.password"></stringProp>
+          </TCPSampler>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assertion Réponse" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="1660">40</stringProp>
+                <stringProp name="0"></stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="Requête TCP - Envoie un relai modifié" enabled="true">
+            <stringProp name="TCPSampler.server"></stringProp>
+            <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+            <stringProp name="TCPSampler.port"></stringProp>
+            <boolProp name="TCPSampler.nodelay">false</boolProp>
+            <stringProp name="TCPSampler.timeout">500</stringProp>
+            <stringProp name="TCPSampler.request">${ENVOIE_RELAY_MODIFIE}</stringProp>
+            <stringProp name="ConfigTestElement.username"></stringProp>
+            <stringProp name="ConfigTestElement.password"></stringProp>
+          </TCPSampler>
+          <hashTree/>
+          <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="Requête TCP - Envoie les LEDs modifiées" enabled="true">
+            <stringProp name="TCPSampler.server"></stringProp>
+            <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+            <stringProp name="TCPSampler.port"></stringProp>
+            <boolProp name="TCPSampler.nodelay">false</boolProp>
+            <stringProp name="TCPSampler.timeout">500</stringProp>
+            <stringProp name="TCPSampler.request">${ENVOIE_LEDS_MODIFIEES}</stringProp>
+            <stringProp name="ConfigTestElement.username"></stringProp>
+            <stringProp name="ConfigTestElement.password"></stringProp>
+          </TCPSampler>
+          <hashTree/>
+          <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="Requête TCP - Lancer la simulaion" enabled="true">
+            <stringProp name="TCPSampler.server"></stringProp>
+            <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+            <stringProp name="TCPSampler.port"></stringProp>
+            <boolProp name="TCPSampler.nodelay">false</boolProp>
+            <stringProp name="TCPSampler.timeout">500</stringProp>
+            <stringProp name="TCPSampler.request">${LANCER_SIMULATION}</stringProp>
+            <stringProp name="ConfigTestElement.username"></stringProp>
+            <stringProp name="ConfigTestElement.password"></stringProp>
+          </TCPSampler>
+          <hashTree/>
+          <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="Requête TCP - Arrêter la simulation" enabled="true">
+            <stringProp name="TCPSampler.server"></stringProp>
+            <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+            <stringProp name="TCPSampler.port"></stringProp>
+            <boolProp name="TCPSampler.nodelay">false</boolProp>
+            <stringProp name="TCPSampler.timeout">500</stringProp>
+            <stringProp name="TCPSampler.request">${ARRETER SIMULATION}</stringProp>
+            <stringProp name="ConfigTestElement.username"></stringProp>
+            <stringProp name="ConfigTestElement.password"></stringProp>
+          </TCPSampler>
+          <hashTree/>
+          <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="Requête TCP - Modifier les informations d&apos;une notification " enabled="true">
+            <stringProp name="TCPSampler.server"></stringProp>
+            <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+            <stringProp name="TCPSampler.port"></stringProp>
+            <boolProp name="TCPSampler.nodelay">false</boolProp>
+            <stringProp name="TCPSampler.timeout">500</stringProp>
+            <stringProp name="TCPSampler.request">${MODIFIER_INFO_NOTIF}</stringProp>
+            <stringProp name="ConfigTestElement.username"></stringProp>
+            <stringProp name="ConfigTestElement.password"></stringProp>
+          </TCPSampler>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

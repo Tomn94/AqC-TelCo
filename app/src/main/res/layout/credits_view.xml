@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/creditsProjectName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/creditsProjectName"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/editText"
+        android:text="@string/creditsText"
+        android:alpha="0.7"
+        android:editable="false"
+        android:inputType="none"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:scrollIndicators="none"
+        android:textAlignment="center"
+        android:background="@android:color/transparent"
+        android:autoLink="web"
+        android:linksClickable="true"
+        />
+
+    <ImageView
+        android:layout_width="116dp"
+        android:layout_height="64dp"
+        android:id="@+id/imageView2"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/eseo_logo" />
+
+    <ImageView
+        android:layout_width="166dp"
+        android:layout_height="62dp"
+        android:id="@+id/imageView3"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ioreef_logo"/>
+</LinearLayout>
