@@ -11,6 +11,8 @@ Complete Embedded System for aquatic ecosystems automation.<br>Android app commu
 
 > **Team-work in Embedded Systems major in our Engineering school ESEO**
 
+*Imported only the final commit of the team SVN repository.*
+
 ### V-model realization
 Follows specification, conception, integration, testing, verification, and validation phases.
 
