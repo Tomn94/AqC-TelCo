@@ -2,12 +2,13 @@
 
 
 ![Version](https://img.shields.io/badge/version-1.0-green.svg)
-![Code](https://img.shields.io/badge/code-Java + XML-orange.svg)
+![Code](https://img.shields.io/badge/code-Java%20+%20XML-orange.svg)
 [![Platform](https://img.shields.io/badge/platform-Android-red.svg)](https://www.android.com/)
-![Contributors](https://img.shields.io/badge/contributors-Rémy SALIM + Thomas NAUDET + François LEPAROUX-blue.svg)
+![Contributors](https://img.shields.io/badge/contributors-Rémy%20SALIM%20+%20Thomas%20NAUDET%20+%20François%20LEPAROUX-blue.svg)
 [![Licence](https://img.shields.io/badge/license-BSD%203--clause-lightgrey.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
-Complete Embedded System for aquatic ecosystems automation.<br>Android app communicating with a Raspberry Pi.
+Complete Embedded System for aquatic ecosystems automation.\
+Android app communicating with a Raspberry Pi.
 
 > **Team-work in Embedded Systems major in our Engineering school ESEO**
 
